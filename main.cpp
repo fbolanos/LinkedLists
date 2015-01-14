@@ -3,7 +3,7 @@
 
 #include <time.h>    /// Needed to seed the random numbers
 #include <stdlib.h>  /// Contains random function
-
+#include <iomanip>
 
 using std::cout;
 using std::cin;
@@ -43,7 +43,7 @@ int main()
     cout << endl << "Deleting Nodes:" << endl;
     for (int k=0; k<SIZE; k++)
     {
-        cout << lon.dequeue() << "\t [DELETED]" << endl;
+        cout << std::setw(2) << lon.dequeue() << "\t [DELETED]" << endl;
     }
 
     //cout << lon.dequeue(); // Will throw exception because list is empty atm!
@@ -56,7 +56,7 @@ int main()
     lon.enqueue(3);
     lon.enqueue(7);
 
-    cout << endl << "Some Data:" << endl;
+    cout << endl << "Some New Data:" << endl;
     lon.display();
 
 

@@ -72,7 +72,6 @@ void LinkedList::display()
         std::cout << std::setw(2) << node_ptr->data <<  "\t" << node_ptr->next << std::endl;
     }
 
-
 }
 
 
